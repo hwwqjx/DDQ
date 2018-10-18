@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情</title>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+</head>
+<body>
+<div class="detail">
+
+</div>
+
+
+<script src="./layui/layui.all.js"></script>
+<script>
+    var logo=document.querySelector(".logo");
+    var input=document.getElementById("nav-input");
+    var nav_bar=document.querySelector(".layui-nav-bar");
+    logo.onmouseover=function(){
+        nav_bar.style.display="none";
+    };
+    logo.onmouseout=function(){
+        nav_bar.style.display="block";
+    };
+    input.onmouseover=function(){
+        nav_bar.style.display="none";
+    };
+    input.onmouseout=function(){
+        nav_bar.style.display="block";
+    };
+</script>
+</body>
+</html>
